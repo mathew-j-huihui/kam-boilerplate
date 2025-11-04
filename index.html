@@ -184,7 +184,7 @@ async function loadLiterature() {
                 <div class="literature-title">${item.title}</div>
                 <div class="literature-meta">作者: ${item.author} | 年份: ${item.year}</div>
                 <p>${item.abstract}</p>
-                <a href="literatre sharing/${item.file}" class="download-btn" download>下载PDF</a>
+                <a href="${item.file}" class="download-btn" download>下载PDF</a>
             `;
             container.appendChild(card);
         });
