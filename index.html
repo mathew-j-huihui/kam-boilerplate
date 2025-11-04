@@ -169,33 +169,33 @@
     </style>
 </head>
 <body>
-<script>
-async function loadLiterature() {
-    const container = document.querySelector(".literature-grid");
+    <script>
+        async function loadLiterature() {
+            const container = document.querySelector(".literature-grid");
 
-    try {
-        const response = await fetch("literature sharing/literature.json");
-        const pdfList = await response.json();
+            try {
+                const response = await fetch("literature sharing/literature.json");
+                const pdfList = await response.json();
 
-        pdfList.forEach(item => {
-            const card = document.createElement("div");
-            card.className = "literature-card";
-            card.innerHTML = `
-                <div class="literature-title">${item.title}</div>
-                <div class="literature-meta">作者: ${item.author} | 年份: ${item.year}</div>
-                <p>${item.abstract}</p>
-                <a href="${item.file}" class="download-btn" download>下载PDF</a>
-            `;
-            container.appendChild(card);
-        });
-    } catch (error) {
-        console.error("加载文献列表失败：", error);
-        container.innerHTML = "<p>⚠️ 文献列表加载失败，请稍后刷新页面。</p>";
-    }
-}
+                pdfList.forEach(item => {
+                    const card = document.createElement("div");
+                    card.className = "literature-card";
+                    card.innerHTML = `
+                        <div class="literature-title">${item.title}</div>
+                        <div class="literature-meta">作者: ${item.author} | 年份: ${item.year}</div>
+                        <p>${item.abstract}</p>
+                        <a href="${item.file}" class="download-btn" download>下载PDF</a>
+                    `;
+                    container.appendChild(card);
+                });
+            } catch (error) {
+                console.error("加载文献列表失败：", error);
+                container.innerHTML = "<p>⚠️ 文献列表加载失败，请稍后刷新页面。</p>";
+            }
+        }
 
-document.addEventListener("DOMContentLoaded", loadLiterature);
-</script>
+        document.addEventListener("DOMContentLoaded", loadLiterature);
+    </script>
 
     <header>
         <div class="container">
@@ -217,7 +217,17 @@ document.addEventListener("DOMContentLoaded", loadLiterature);
         <section class="content-section">
             <h2 class="section-title">文献信息</h2>
             <p>RESEARCH LITERATURE REVIEW</p>
-
+            <div class="literature-grid">
+                <!-- 文献卡片1 -->
+                <div class="literature-card">
+                    <div class="literature-title">firm risk on boilerplate of key audit matter_evendence from china</div>
+                    <div class="literature-meta">AUTHOR:Wang et al | TIME: 2024</div>
+                    <p>ABSTRACT: This paper examines whether auditors of firms with higher financial risk disclose less boilerplate of KAMs. Our empirical study demonstrates that KAMs are more differentiated if the firms are subject to higher financial risk. This association is only pronounced for client firms in the weaker legal environment and audit firms with larger market shares. In addition, client pressure will weaken the motivation of auditors to differentiate KAMs of firms with a higher level of financial risk. We also find that auditors are more likely to differentiate KAMs related to firms’ profitability if firms are subject to high financial risk.</p>
+                    <a href="literature sharing/firm risk on boilerplate of key audit matter_evendence from china.pdf" class="download-btn" download>下载PDF</a>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <footer>
         <div class="container">
