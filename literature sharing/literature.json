@@ -1,16 +1,17 @@
 [
   {
-    "title": "Firm Risk on Boilerplate of Key Audit Matter: Evidence from China",
-    "author": "Wang et al.",
-    "year": "2024",
-    "abstract": "This paper investigates how firm-level risk affects the boilerplate nature of KAMs in China.",
-    "file": "literature sharing/firm risk on boilerplate of key audit matter_evendence from china.pdf"
+    "title": "Risk disclosure preceding negative outcomes:the effects of reportiong critical audit matters on judgements of auditor liability",
+    "author": "Brasel et al.",
+    "year": "2025",
+    "abstract": "CAM disclosures only reduce auditor liability for undetected misstatements that absent CAM disclosure are relatively difficult to foresee.",
+    "file": "Brasel-RiskDisclosurePreceding-2016.pdf"
   },
   {
     "title": "Artificial Intelligence and Employee Well-being",
     "author": "Li et al.",
     "year": "2023",
-    "abstract": "Examines how AI usage in organizations impacts employees’ psychological outcomes.",
+    "abstract": "Firstly, the paper deals specifically with audit partner and firm rotations as possible KAM determinants." +
+        " Secondly, hand-collected details are analysed to test for changes in the absolute number of KAMs as well as for KAMs added to or removed from audit reports to provide a more refined measure of how KAM disclosures are varying.",
     "file": "literature sharing/BAR-How do auditor rotations affect key audit matters-south africa.pdf"
   }
 ]
